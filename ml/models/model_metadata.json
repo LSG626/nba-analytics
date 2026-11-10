@@ -1,0 +1,47 @@
+{
+  "trained_at": "2026-11-10T11:04:15.754051+00:00",
+  "knowledge_cutoff": "2026-11-07T22:00:00+00:00",
+  "selected_game_winner_model": "XGBoost",
+  "selected_score_models": {
+    "home_score": "LightGBM",
+    "away_score": "LightGBM"
+  },
+  "sources": {
+    "game": "Games.csv",
+    "player": "PlayerStatisticsExtended.csv",
+    "team_strength": "TeamStatisticsExtended.csv",
+    "data_directories": [
+      "C:\\Users\\lrmas\\OneDrive\\Desktop\\NBA\\data\\processed",
+      "C:\\Users\\lrmas\\OneDrive\\Desktop\\NBA\\data\\raw",
+      "C:\\Users\\lrmas\\OneDrive\\Desktop\\NBA\\Raw"
+    ]
+  },
+  "game_features": [
+    "home_is_home",
+    "home_prior_games",
+    "away_prior_games",
+    "home_win_rate_all",
+    "away_win_rate_all",
+    "home_win_rate_last5",
+    "away_win_rate_last5",
+    "home_win_rate_last10",
+    "away_win_rate_last10",
+    "home_points_for_last5",
+    "away_points_for_last5",
+    "home_points_against_last5",
+    "away_points_against_last5",
+    "home_points_for_all",
+    "away_points_for_all",
+    "home_points_against_all",
+    "away_points_against_all",
+    "home_rest_days",
+    "away_rest_days",
+    "home_home_win_rate",
+    "away_away_win_rate",
+    "head_to_head_home_win_rate",
+    "head_to_head_games",
+    "home_elo",
+    "away_elo",
+    "elo_difference"
+  ]
+}

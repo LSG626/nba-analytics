@@ -1,0 +1,91 @@
+{
+  "available": true,
+  "method": "expanding training window; three rolling chronological evaluation windows within the development period; final holdout excluded",
+  "classifier": "XGBoost",
+  "folds": [
+    {
+      "fold": 1,
+      "train_end": "2004-04-10T19:00:00+00:00",
+      "evaluation_start": "2004-04-10T19:30:00+00:00",
+      "evaluation_end": "2007-01-13T22:30:00+00:00",
+      "train_rows": 42916,
+      "evaluation_rows": 3573,
+      "classification": {
+        "model": {
+          "accuracy": 0.6473551637279596,
+          "precision": 0.6680358476474981,
+          "recall": 0.8282407407407407,
+          "f1": 0.739561802397685,
+          "roc_auc": 0.677146732719981,
+          "log_loss": 0.6246014182049117,
+          "brier_score": 0.21763059496879578
+        },
+        "baseline_historical_home_rate": {
+          "accuracy": 0.6045340050377834,
+          "precision": 0.6045340050377834,
+          "recall": 1.0,
+          "f1": 0.7535321821036107,
+          "roc_auc": 0.5,
+          "log_loss": 0.6737448932568877,
+          "brier_score": 0.24029398865078241
+        }
+      }
+    },
+    {
+      "fold": 2,
+      "train_end": "2008-03-17T19:00:00+00:00",
+      "evaluation_start": "2008-03-17T20:00:00+00:00",
+      "evaluation_end": "2010-12-07T19:00:00+00:00",
+      "train_rows": 48336,
+      "evaluation_rows": 3587,
+      "classification": {
+        "model": {
+          "accuracy": 0.6821856704767215,
+          "precision": 0.7117957032833401,
+          "recall": 0.8036613272311213,
+          "f1": 0.7549441100601891,
+          "roc_auc": 0.7256328814344986,
+          "log_loss": 0.5916344771638447,
+          "brier_score": 0.20316770672798157
+        },
+        "baseline_historical_home_rate": {
+          "accuracy": 0.6091441315862838,
+          "precision": 0.6091441315862838,
+          "recall": 1.0,
+          "f1": 0.7571032571032571,
+          "roc_auc": 0.5,
+          "log_loss": 0.6705826437913963,
+          "brier_score": 0.23876751601378812
+        }
+      }
+    },
+    {
+      "fold": 3,
+      "train_end": "2012-04-14T15:30:00+00:00",
+      "evaluation_start": "2012-04-14T19:00:00+00:00",
+      "evaluation_end": "2014-12-27T22:30:00+00:00",
+      "train_rows": 53840,
+      "evaluation_rows": 3594,
+      "classification": {
+        "model": {
+          "accuracy": 0.667779632721202,
+          "precision": 0.6775320139697323,
+          "recall": 0.8278805120910384,
+          "f1": 0.7451984635083226,
+          "roc_auc": 0.7017965333754808,
+          "log_loss": 0.6150135670611743,
+          "brier_score": 0.21325822174549103
+        },
+        "baseline_historical_home_rate": {
+          "accuracy": 0.5868113522537562,
+          "precision": 0.5868113522537562,
+          "recall": 1.0,
+          "f1": 0.7396107311941084,
+          "roc_auc": 0.5,
+          "log_loss": 0.6823575737061123,
+          "brier_score": 0.24452282604418915
+        }
+      }
+    }
+  ]
+}
